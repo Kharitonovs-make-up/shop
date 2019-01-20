@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Результаты поиска по запросу: <?=$search?></h2>
+    <h2 style="text-align: center;">Результаты поиска по запросу: <?=$search?></h2>
     <div class="row justify-content-center">
         <? if($goods) {
         foreach($goods as $good) { ?>

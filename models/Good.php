@@ -20,7 +20,7 @@ class Good extends ActiveRecord
         $goods = Yii::$app->cache->get('goods');
         if(!$goods) {
             $goods = Good::find()->asArray()->all();
-            Yii::$app->cache->set('goods', $goods, 10);
+            Yii::$app->cache->set('goods', $goods, 1);
         }
         return $goods;
     }
@@ -28,7 +28,7 @@ class Good extends ActiveRecord
         $catGoods = Yii::$app->cache->get('catGoods');
         if(!$catGoods) {
             $catGoods = Good::find()->WHERE(['category' => $id])->asArray()->all();
-            Yii::$app->cache->set('catGoods', $catGoods, 10);
+            Yii::$app->cache->set('catGoods', $catGoods, 1);
         }
         return $catGoods;
     }
