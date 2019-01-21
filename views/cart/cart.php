@@ -20,7 +20,7 @@ if($session['cart']) {
         <td style="vertical-align: middle"><?=$good['name']?></td>
         <td style="vertical-align: middle"><?=$good['goodQuantity']?></td>
         <td style="vertical-align: middle"><?=$good['price']*$good['goodQuantity']?></td>
-        <td class="delete" style="text-align: center; cursor: pointer; vertical-align: middle; color: red"><span>&#10006;</span></td>
+        <td class="delete" data-id="<?=$id?>" style="text-align: center; cursor: pointer; vertical-align: middle; color: red"><span>&#10006;</span></td>
     </tr>
     <? } ?>
     <tr style="border-top: 4px solid black">

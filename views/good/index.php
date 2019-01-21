@@ -1,8 +1,6 @@
 <?
 use yii\helpers\Html;
 ?>
-<? $this->title = 'PHP Shop | ' . $good['name'];
-?>
 <head>
     <title><?=$good['name']?></title>
 </head>
