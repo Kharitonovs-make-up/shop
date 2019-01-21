@@ -16,6 +16,8 @@ class GoodController extends Controller
     public function actionIndex($name) {
         $good = new Good();
         $good = $good->getOneGood($name);
+        //$this->title = 'Ресторан';
+        //$this->title = 'PHP Shop | ' . $good['name'];
         return $this->render('index', compact('good'));
     }
 }

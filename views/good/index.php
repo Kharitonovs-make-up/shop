@@ -1,3 +1,11 @@
+<?
+use yii\helpers\Html;
+?>
+<? $this->title = 'PHP Shop | ' . $good['descr'];
+?>
+<head>
+    <title><?= Html::encode($good['descr']) ?></title>
+</head>
 
 <div class="container">
     <div class="row justify-content-md-center">
@@ -13,7 +21,7 @@
                 <div class="product-descr">Описание: <?=$good['descr']?></div>
                 <div class="product-price">Цена: <?=$good['price']?> рублей</div>
                 <div class="product-buttons">
-                    <button type="button" class="product-button__add btn btn-success">Заказать</button>
+                    <a href="#" data-name="<?=$good['link_name']?>" class="product-button__add btn btn-success">Заказать</a>
                 </div>
             </div>
         </div>
