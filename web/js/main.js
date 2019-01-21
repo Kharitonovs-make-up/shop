@@ -18,17 +18,19 @@ function openCart(event) {
 }
 
 function clearCart(event) {
-    event.preventDefault();
-    $.ajax({
-        url: '/cart/clear',
-        type: 'GET',
-        success: function (res) {
-            $('#cart .modal-content').html(res);
-        },
-        error: function () {
-            alert('error');
-        }
-    })
+    if(confirm('Точно хотите очистить корзину?')) {
+        event.preventDefault();
+        $.ajax({
+            url: '/cart/clear',
+            type: 'GET',
+            success: function (res) {
+                $('#cart .modal-content').html(res);
+            },
+            error: function () {
+                alert('error');
+            }
+        })
+    }
 }
 
 $('.product-button__add').on('click', function (event) {

@@ -1,10 +1,10 @@
 <?
 use yii\helpers\Html;
 ?>
-<? $this->title = 'PHP Shop | ' . $good['descr'];
+<? $this->title = 'PHP Shop | ' . $good['name'];
 ?>
 <head>
-    <title><?= Html::encode($good['descr']) ?></title>
+    <title><?=$good['name']?></title>
 </head>
 
 <div class="container">

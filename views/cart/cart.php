@@ -35,7 +35,7 @@ if($session['cart']) {
 </table>
 <div class="modal-buttons" style="display: flex; padding: 15px; justify-content: space-around">
     <button type="button" class="btn btn-danger" onclick="clearCart(event)" ">Очистить корзину</button>
-    <button type=" button" class="btn btn-secondary btn-close">Продолжить
+    <button type="button" class="btn btn-secondary btn-close">Продолжить
         покупки</button>
     <button type="button" class="btn btn-success btn-next">Оформить заказ</button>
 </div>
