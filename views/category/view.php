@@ -1,9 +1,9 @@
 <?=\app\widgets\MenuWidget::widget()?>
 <? use yii\helpers\Url; ?>
-<?php
-$this->title = 'Ресторан Суши'.' | '.$good['link_name'];
-?>
 
+<?php
+$this->title = 'Ресторан Суши'.' | '.$goods[0]['category'];
+?>
 <div class="container">
     <div class="row justify-content-center">
         <?foreach($goods as $good) { ?>

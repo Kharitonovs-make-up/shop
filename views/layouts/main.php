@@ -13,7 +13,7 @@ use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
-<?php $this->beginPage() ?>
+<?php $this->beginPage()?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
@@ -21,7 +21,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title>Ресторан Суши</title>
     <?php $this->head() ?>
 </head>
 <body>

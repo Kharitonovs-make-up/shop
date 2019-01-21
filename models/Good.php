@@ -26,7 +26,7 @@ class Good extends ActiveRecord
     }
     public function getGoodCategories($id) {
         $catGoods = Yii::$app->cache->get('catGoods'.$id);
-        if(!$catGoods[$id]) {
+        if(!$catGoods.$id) {
             $catGoods = Good::find()->WHERE(['category' => $id])->asArray()->all();
             Yii::$app->cache->set('catGoods'.$id, $catGoods, 30);
         }

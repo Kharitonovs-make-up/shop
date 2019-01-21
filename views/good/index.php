@@ -1,9 +1,7 @@
 <?
 use yii\helpers\Html;
+$this->title = 'Ресторан Суши'.' | '.$good['name'];
 ?>
-<head>
-    <title><?=$good['name']?></title>
-</head>
 
 <div class="container">
     <div class="row justify-content-md-center">

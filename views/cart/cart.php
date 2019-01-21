@@ -1,5 +1,6 @@
 <h2 style="padding: 10px; text-align: center">Корзина</h2>
 <?
+$this->title = 'Ресторан Суши';
 if($session['cart']) {
     ?>
 <table class="table table-striped">

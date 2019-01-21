@@ -1,4 +1,6 @@
 <? use yii\helpers\Url; ?>
+<?
+$this->title = 'Ресторан Суши'.' | '.$goods[0]['category']; ?>
 <div class="container">
     <h2 style="text-align: center;">Результаты поиска по запросу: <?=$search?></h2>
     <div class="row justify-content-center">
